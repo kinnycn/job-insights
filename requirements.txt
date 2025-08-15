@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+sqlmodel
+pandas
+python-dotenv
+pytest
