@@ -40,7 +40,7 @@
 - `配置管理`：python-dotenv（支持多环境配置）
 
 ## 树结构
-
+```
 app/
  ├── main.py          # 应用入口，挂载路由
  ├── models.py        # SQLModel 数据模型 (Job)
@@ -57,7 +57,3 @@ tests/
 
 - 启动服务：uvicorn app.main:app --reload
 - 访问文档：http://127.0.0.1:8000/docs
-
-=======
-# job-insights
->>>>>>> b6dcf812102d9e113c33dd71636d795e7a79c53d
