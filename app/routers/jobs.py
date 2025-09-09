@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 
 from typing import Optional, List
 from fastapi import APIRouter, Depends, Query
 from sqlmodel import select
 from ..database import get_session
+=======
+from typing import Optional, List
+from fastapi import APIRouter, Depends, Query
+from sqlmodel import select
+from ..session import get_session
+>>>>>>> b6dcf812102d9e113c33dd71636d795e7a79c53d
 from ..models import Job
 
 router = APIRouter()
@@ -28,4 +35,8 @@ def list_jobs(
 def recommend_jobs(skill: str, limit: int = 10, session = Depends(get_session)):
     like = f"%{skill}%"
     stmt = select(Job).where((Job.title.like(like)) | (Job.desc.like(like))).limit(limit)
+<<<<<<< HEAD
     return session.exec(stmt).all()
+=======
+    return session.exec(stmt).all()
+>>>>>>> b6dcf812102d9e113c33dd71636d795e7a79c53d

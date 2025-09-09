@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Job Insights  
 
 基于FastAPI + SQLModel的招聘信息平台后端原型,提供职位的查询、推荐、统计分析接口，并支持加载样例数据，快速展示完整的数据流
@@ -57,3 +58,6 @@ tests/
 - 启动服务：uvicorn app.main:app --reload
 - 访问文档：http://127.0.0.1:8000/docs
 
+=======
+# job-insights
+>>>>>>> b6dcf812102d9e113c33dd71636d795e7a79c53d
