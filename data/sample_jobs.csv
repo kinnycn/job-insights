@@ -1,0 +1,3 @@
+title,company,city,salary_min,salary_max,experience,posted_at,desc
+Python后端工程师,ABC科技,北京,15000,25000,3-5年,2025-07-01,负责API开发与维护，熟悉FastAPI/Flask
+数据工程师,XYZ数据,上海,18000,30000,2-4年,2025-07-03,负责ETL流程与数据仓库建设，熟悉Pandas/SQL
