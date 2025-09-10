@@ -1,14 +1,4 @@
-<<<<<<< HEAD
 
-import os
-from sqlmodel import SQLModel, create_engine, Session
-from dotenv import load_dotenv
-
-load_dotenv()
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///data/jobs.db")
-connect_args = {"check_same_thread": False} if DATABASE_URL.startswith("sqlite") else {}
-engine = create_engine(DATABASE_URL, echo=False, connect_args=connect_args)
-=======
 import os
 from sqlmodel import SQLModel, create_engine
 from dotenv import load_dotenv
@@ -18,13 +8,10 @@ load_dotenv()
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///data/jobs.db")
 connect_args = {"check_same_thread": False} if DATABASE_URL.startswith("sqlite") else {}
 engine = create_engine(DATABASE_URL, connect_args=connect_args)
->>>>>>> b6dcf812102d9e113c33dd71636d795e7a79c53d
 
 def create_db_and_tables():
     SQLModel.metadata.create_all(engine)
 
-<<<<<<< HEAD
 def get_session():
     return Session(engine)
-=======
->>>>>>> b6dcf812102d9e113c33dd71636d795e7a79c53d
+

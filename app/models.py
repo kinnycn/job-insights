@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> b6dcf812102d9e113c33dd71636d795e7a79c53d
 from typing import Optional
 from datetime import date
 from sqlmodel import SQLModel, Field

@@ -1,13 +1,6 @@
-<<<<<<< HEAD
-
 __pycache__/
 *.py[cod]
 .venv/
 .DS_Store
-=======
-__pycache__/
-*.py[cod]
-.venv/
->>>>>>> b6dcf812102d9e113c33dd71636d795e7a79c53d
 data/*.db
 .env
